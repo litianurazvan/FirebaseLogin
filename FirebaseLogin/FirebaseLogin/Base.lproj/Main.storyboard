@@ -77,11 +77,51 @@
                     <view key="view" contentMode="scaleToFill" id="aCG-Hf-qxF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="TEF-81-3eu">
+                                <rect key="frame" x="87.5" y="268.5" width="200" height="130"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8JT-it-zoc">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="70"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r9h-aP-7rB">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y18-dv-305">
+                                                <rect key="frame" x="0.0" y="40" width="200" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="3x2-z0-R1E"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTw-OR-jvY">
+                                        <rect key="frame" x="81" y="100" width="38" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="onLoginButtonTap:" destination="Qyu-lN-htb" eventType="touchUpInside" id="xf4-ec-Rri"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TEF-81-3eu" firstAttribute="centerX" secondItem="aCG-Hf-qxF" secondAttribute="centerX" id="2aa-gM-1K8"/>
+                            <constraint firstItem="TEF-81-3eu" firstAttribute="centerY" secondItem="aCG-Hf-qxF" secondAttribute="centerY" id="5AG-IF-0Mn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qSf-Rs-aJz"/>
                     </view>
                     <connections>
-                        <segue destination="NRy-Wz-Hei" kind="presentation" identifier="LoginToHome" id="f3K-qH-0i7"/>
+                        <outlet property="passwordTextField" destination="Y18-dv-305" id="0Yd-y2-HxJ"/>
+                        <outlet property="userNameTextField" destination="r9h-aP-7rB" id="1hh-8u-vS6"/>
+                        <segue destination="NRy-Wz-Hei" kind="presentation" identifier="LogInToHome" id="f3K-qH-0i7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRu-j4-ZTV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -141,6 +181,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="su6-yi-lzh"/>
+        <segue reference="f3K-qH-0i7"/>
     </inferredMetricsTieBreakers>
 </document>
