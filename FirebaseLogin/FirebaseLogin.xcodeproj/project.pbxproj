@@ -54,14 +54,22 @@
 		B20133722052B52D00510A0C /* FirebaseLogin */ = {
 			isa = PBXGroup;
 			children = (
-				B20133732052B52D00510A0C /* AppDelegate.swift */,
-				B20133752052B52D00510A0C /* ViewController.swift */,
 				B20133772052B52D00510A0C /* Main.storyboard */,
-				B201337A2052B52D00510A0C /* Assets.xcassets */,
-				B201337C2052B52D00510A0C /* LaunchScreen.storyboard */,
-				B201337F2052B52D00510A0C /* Info.plist */,
+				B20133752052B52D00510A0C /* ViewController.swift */,
+				B2BD82172052C20900F3BC82 /* Supporting files */,
 			);
 			path = FirebaseLogin;
+			sourceTree = "<group>";
+		};
+		B2BD82172052C20900F3BC82 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				B201337F2052B52D00510A0C /* Info.plist */,
+				B20133732052B52D00510A0C /* AppDelegate.swift */,
+				B201337A2052B52D00510A0C /* Assets.xcassets */,
+				B201337C2052B52D00510A0C /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
