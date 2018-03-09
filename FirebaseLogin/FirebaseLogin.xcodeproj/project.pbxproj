@@ -68,8 +68,7 @@
 				B201337F2052B52D00510A0C /* Info.plist */,
 				B2BD821F2052C3B700F3BC82 /* Screens */,
 				B2BD82172052C20900F3BC82 /* Supporting files */,
-				B2BD82202052D6F100F3BC82 /* SegueHandlerType.swift */,
-				B2BD82222052DDB800F3BC82 /* String+CapitalisedFirst.swift */,
+				B2BD82242052E15200F3BC82 /* Extensions */,
 			);
 			path = FirebaseLogin;
 			sourceTree = "<group>";
@@ -93,6 +92,15 @@
 				B2BD821C2052C3A000F3BC82 /* HomeViewController.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		B2BD82242052E15200F3BC82 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2BD82202052D6F100F3BC82 /* SegueHandlerType.swift */,
+				B2BD82222052DDB800F3BC82 /* String+CapitalisedFirst.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
