@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B20133742052B52D00510A0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20133732052B52D00510A0C /* AppDelegate.swift */; };
-		B20133762052B52D00510A0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20133752052B52D00510A0C /* ViewController.swift */; };
+		B20133762052B52D00510A0C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20133752052B52D00510A0C /* StartViewController.swift */; };
 		B20133792052B52D00510A0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20133772052B52D00510A0C /* Main.storyboard */; };
 		B201337B2052B52D00510A0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B201337A2052B52D00510A0C /* Assets.xcassets */; };
 		B201337E2052B52D00510A0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B201337C2052B52D00510A0C /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		B20133702052B52D00510A0C /* FirebaseLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20133732052B52D00510A0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B20133752052B52D00510A0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B20133752052B52D00510A0C /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		B20133782052B52D00510A0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B201337A2052B52D00510A0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B201337D2052B52D00510A0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				B20133772052B52D00510A0C /* Main.storyboard */,
-				B20133752052B52D00510A0C /* ViewController.swift */,
+				B20133752052B52D00510A0C /* StartViewController.swift */,
 				B2BD82172052C20900F3BC82 /* Supporting files */,
 			);
 			path = FirebaseLogin;
@@ -144,7 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B20133762052B52D00510A0C /* ViewController.swift in Sources */,
+				B20133762052B52D00510A0C /* StartViewController.swift in Sources */,
 				B20133742052B52D00510A0C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
