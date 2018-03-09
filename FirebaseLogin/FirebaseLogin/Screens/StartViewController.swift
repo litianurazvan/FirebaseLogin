@@ -8,11 +8,13 @@
 
 import UIKit
 
-class StartViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+class StartViewController: UIViewController, SegueHandlerType {
+    
+    @IBAction func onLoginButtonTap(_ sender: UIButton) {
+        performSegue(withIdentifier: .StartToLogin, sender: nil)
+    }
+    @IBAction func onSignUpButtonTap(_ sender: UIButton) {
+        performSegue(withIdentifier: .StartToSignUp, sender: nil)
     }
 }
 
