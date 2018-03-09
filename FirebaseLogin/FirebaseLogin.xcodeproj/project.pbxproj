@@ -16,6 +16,7 @@
 		B2BD821B2052C39600F3BC82 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD821A2052C39600F3BC82 /* SignUpViewController.swift */; };
 		B2BD821D2052C3A000F3BC82 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD821C2052C3A000F3BC82 /* HomeViewController.swift */; };
 		B2BD82212052D6F100F3BC82 /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD82202052D6F100F3BC82 /* SegueHandlerType.swift */; };
+		B2BD82232052DDB800F3BC82 /* String+CapitalisedFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD82222052DDB800F3BC82 /* String+CapitalisedFirst.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B2BD821A2052C39600F3BC82 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B2BD821C2052C3A000F3BC82 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B2BD82202052D6F100F3BC82 /* SegueHandlerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueHandlerType.swift; sourceTree = "<group>"; };
+		B2BD82222052DDB800F3BC82 /* String+CapitalisedFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CapitalisedFirst.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				B2BD821F2052C3B700F3BC82 /* Screens */,
 				B2BD82172052C20900F3BC82 /* Supporting files */,
 				B2BD82202052D6F100F3BC82 /* SegueHandlerType.swift */,
+				B2BD82222052DDB800F3BC82 /* String+CapitalisedFirst.swift */,
 			);
 			path = FirebaseLogin;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				B2BD821D2052C3A000F3BC82 /* HomeViewController.swift in Sources */,
 				B2BD82192052C38800F3BC82 /* LoginViewController.swift in Sources */,
 				B20133762052B52D00510A0C /* StartViewController.swift in Sources */,
+				B2BD82232052DDB800F3BC82 /* String+CapitalisedFirst.swift in Sources */,
 				B2BD821B2052C39600F3BC82 /* SignUpViewController.swift in Sources */,
 				B2BD82212052D6F100F3BC82 /* SegueHandlerType.swift in Sources */,
 				B20133742052B52D00510A0C /* AppDelegate.swift in Sources */,

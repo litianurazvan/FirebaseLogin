@@ -9,17 +9,18 @@
 import UIKit
 
 enum SegueIdentifier: String {
-    case StartToLogin
-    case StartToHome
-    case StartToSignUp
-    case LoginToHome
-    case SignUpToHome
+    case startToLogin
+    case startToHome
+    case startToSignUp
+    case soginToHome
+    case signUpToHome
 }
 
 protocol SegueHandlerType { }
 
 extension SegueHandlerType where Self: UIViewController {
     func performSegue(withIdentifier identifier: SegueIdentifier, sender: Any?) {
-        performSegue(withIdentifier: identifier.rawValue, sender: sender)
+        guard let idetifierString = identifier.rawValue.firstUpperCased else { print("Problem converting identifier enum value to String"); return }
+        performSegue(withIdentifier: idetifierString, sender: sender)
     }
 }
