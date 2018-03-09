@@ -22,9 +22,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Qpz-0u-jmZ"/>
                     <connections>
-                        <segue destination="Qyu-lN-htb" kind="show" id="dbi-VY-Y3n"/>
-                        <segue destination="8Hf-E3-9Aa" kind="show" id="JjZ-OQ-jIa"/>
-                        <segue destination="NRy-Wz-Hei" kind="presentation" id="FUi-xK-OBf"/>
+                        <segue destination="Qyu-lN-htb" kind="show" identifier="StartToLogin" id="dbi-VY-Y3n"/>
+                        <segue destination="8Hf-E3-9Aa" kind="show" identifier="StartToSignUp" id="JjZ-OQ-jIa"/>
+                        <segue destination="NRy-Wz-Hei" kind="presentation" identifier="StartToHome" id="FUi-xK-OBf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -42,7 +42,7 @@
                         <viewLayoutGuide key="safeArea" id="qSf-Rs-aJz"/>
                     </view>
                     <connections>
-                        <segue destination="NRy-Wz-Hei" kind="presentation" id="f3K-qH-0i7"/>
+                        <segue destination="NRy-Wz-Hei" kind="presentation" identifier="LoginToHome" id="f3K-qH-0i7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRu-j4-ZTV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -75,7 +75,7 @@
                         <viewLayoutGuide key="safeArea" id="y6T-sg-ga0"/>
                     </view>
                     <connections>
-                        <segue destination="NRy-Wz-Hei" kind="presentation" id="su6-yi-lzh"/>
+                        <segue destination="NRy-Wz-Hei" kind="presentation" identifier="SignUpToHome" id="su6-yi-lzh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLI-ve-yx0" userLabel="First Responder" sceneMemberID="firstResponder"/>
