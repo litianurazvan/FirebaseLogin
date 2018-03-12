@@ -63,7 +63,7 @@
                     <connections>
                         <segue destination="Qyu-lN-htb" kind="show" identifier="StartToLogin" id="dbi-VY-Y3n"/>
                         <segue destination="8Hf-E3-9Aa" kind="show" identifier="StartToSignUp" id="JjZ-OQ-jIa"/>
-                        <segue destination="NRy-Wz-Hei" kind="presentation" identifier="StartToHome" id="FUi-xK-OBf"/>
+                        <segue destination="BCc-cM-7LX" kind="presentation" identifier="StartToHome" id="FUi-xK-OBf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -121,7 +121,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="Y18-dv-305" id="0Yd-y2-HxJ"/>
                         <outlet property="userNameTextField" destination="r9h-aP-7rB" id="1hh-8u-vS6"/>
-                        <segue destination="NRy-Wz-Hei" kind="presentation" identifier="LogInToHome" id="f3K-qH-0i7"/>
+                        <segue destination="BCc-cM-7LX" kind="presentation" identifier="LogInToHome" id="f3K-qH-0i7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRu-j4-ZTV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -150,10 +150,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sHN-7R-iDm"/>
                     </view>
+                    <navigationItem key="navigationItem" id="5ME-Zf-IWL">
+                        <barButtonItem key="rightBarButtonItem" title="Sign out" id="CiK-pY-rkr">
+                            <connections>
+                                <action selector="onSignOutButtonTap:" destination="NRy-Wz-Hei" id="2YT-Zk-eAm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYy-dz-xDG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3790" y="77"/>
+            <point key="canvasLocation" x="4790" y="76"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="lCo-U1-JYw">
@@ -213,7 +220,7 @@
                         <outlet property="passwordTextField" destination="fWX-zQ-qlp" id="Pgz-hV-3zC"/>
                         <outlet property="retypePasswordTextField" destination="qnH-0b-vzM" id="2Q6-w8-E9Z"/>
                         <outlet property="userNameTextField" destination="kgd-NR-ICG" id="wO0-h1-2Av"/>
-                        <segue destination="NRy-Wz-Hei" kind="presentation" identifier="SignUpToHome" id="su6-yi-lzh"/>
+                        <segue destination="BCc-cM-7LX" kind="presentation" identifier="SignUpToHome" id="su6-yi-lzh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLI-ve-yx0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -237,6 +244,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3U-JW-aPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-417" y="134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pPo-MR-7Eh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BCc-cM-7LX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nMY-a0-MlB">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NRy-Wz-Hei" kind="relationship" relationship="rootViewController" id="ODQ-0o-Fa8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jnY-AD-Ilz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3788.8000000000002" y="76.46176911544228"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
