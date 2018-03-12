@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, SegueHandlerType {
 
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -16,5 +16,6 @@ class SignUpViewController: UIViewController {
     
 
     @IBAction func onSignUpButtonPress(_ sender: UIButton) {
+        performSegueWithIdentifier(.signUpToHome, sender: nil)
     }
 }
