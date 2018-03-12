@@ -20,6 +20,7 @@
 		B2BD82232052DDB800F3BC82 /* String+CapitalisedFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD82222052DDB800F3BC82 /* String+CapitalisedFirst.swift */; };
 		B2BD82262056A4E500F3BC82 /* UIAlertController+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD82252056A4E500F3BC82 /* UIAlertController+Default.swift */; };
 		B2BD82282056AA2A00F3BC82 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2BD82272056AA2A00F3BC82 /* GoogleService-Info.plist */; };
+		B2BD822A2056B8A500F3BC82 /* UIStoryBoard+CustomInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD82292056B8A500F3BC82 /* UIStoryBoard+CustomInit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		B2BD82222052DDB800F3BC82 /* String+CapitalisedFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CapitalisedFirst.swift"; sourceTree = "<group>"; };
 		B2BD82252056A4E500F3BC82 /* UIAlertController+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Default.swift"; sourceTree = "<group>"; };
 		B2BD82272056AA2A00F3BC82 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B2BD82292056B8A500F3BC82 /* UIStoryBoard+CustomInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryBoard+CustomInit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				B2BD82202052D6F100F3BC82 /* SegueHandlerType.swift */,
 				B2BD82222052DDB800F3BC82 /* String+CapitalisedFirst.swift */,
 				B2BD82252056A4E500F3BC82 /* UIAlertController+Default.swift */,
+				B2BD82292056B8A500F3BC82 /* UIStoryBoard+CustomInit.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				B20133762052B52D00510A0C /* StartViewController.swift in Sources */,
 				B2BD82232052DDB800F3BC82 /* String+CapitalisedFirst.swift in Sources */,
 				B2BD82262056A4E500F3BC82 /* UIAlertController+Default.swift in Sources */,
+				B2BD822A2056B8A500F3BC82 /* UIStoryBoard+CustomInit.swift in Sources */,
 				B2BD821B2052C39600F3BC82 /* SignUpViewController.swift in Sources */,
 				B2BD82212052D6F100F3BC82 /* SegueHandlerType.swift in Sources */,
 				B20133742052B52D00510A0C /* AppDelegate.swift in Sources */,

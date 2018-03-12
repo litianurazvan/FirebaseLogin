@@ -14,13 +14,16 @@ enum SegueIdentifier: String {
     case startToSignUp
     case logInToHome
     case signUpToHome
+    
+    var capitalised: String {
+       return self.rawValue.firstUpperCased!
+    }
 }
 
 protocol SegueHandlerType { }
 
 extension SegueHandlerType where Self: UIViewController {
     func performSegueWithIdentifier(_ identifier: SegueIdentifier, sender: Any?) {
-        guard let idetifierString = identifier.rawValue.firstUpperCased else { print("Problem converting identifier enum value to String"); return }
-        performSegue(withIdentifier: idetifierString, sender: sender)
+        performSegue(withIdentifier: identifier.capitalised, sender: sender)
     }
 }
