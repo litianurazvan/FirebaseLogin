@@ -150,10 +150,57 @@
                     <view key="view" contentMode="scaleToFill" id="SIA-ii-oBT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="h6B-Bi-Q7C">
+                                <rect key="frame" x="87.5" y="218.5" width="200" height="230"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="LSd-D0-C4H">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="150"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kgd-NR-ICG">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fWX-zQ-qlp">
+                                                <rect key="frame" x="0.0" y="60" width="200" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-type password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qnH-0b-vzM">
+                                                <rect key="frame" x="0.0" y="120" width="200" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="SsN-KM-qaq"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDF-ra-G6a">
+                                        <rect key="frame" x="74" y="200" width="52" height="30"/>
+                                        <state key="normal" title="Sign up"/>
+                                        <connections>
+                                            <action selector="onSignUpButtonPress:" destination="8Hf-E3-9Aa" eventType="touchUpInside" id="REZ-nP-3Vf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="h6B-Bi-Q7C" firstAttribute="centerY" secondItem="SIA-ii-oBT" secondAttribute="centerY" id="tXN-rA-pZo"/>
+                            <constraint firstItem="h6B-Bi-Q7C" firstAttribute="centerX" secondItem="SIA-ii-oBT" secondAttribute="centerX" id="v5A-nR-nK2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="y6T-sg-ga0"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTextField" destination="fWX-zQ-qlp" id="Pgz-hV-3zC"/>
+                        <outlet property="retypePasswordTextField" destination="qnH-0b-vzM" id="2Q6-w8-E9Z"/>
+                        <outlet property="userNameTextField" destination="kgd-NR-ICG" id="wO0-h1-2Av"/>
                         <segue destination="NRy-Wz-Hei" kind="presentation" identifier="SignUpToHome" id="su6-yi-lzh"/>
                     </connections>
                 </viewController>
@@ -181,6 +228,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="f3K-qH-0i7"/>
+        <segue reference="su6-yi-lzh"/>
     </inferredMetricsTieBreakers>
 </document>
