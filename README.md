@@ -1,5 +1,5 @@
 # FirebaseLogin
-Login Functionality using Firebase
+Login feature using Firebase
 
 This project was build using the following [tutorial](https://medium.com/@ashikabala01/how-to-build-login-and-sign-up-functionality-for-your-ios-app-using-firebase-within-15-mins-df4731faf2f7) plus some addition changes.
 
